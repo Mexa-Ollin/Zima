@@ -8,21 +8,20 @@
 % x - Position along the fin
 % t - time :v
 
+
 % Global parameters.
 A = 1;
-lambda = 2; % Reduction could aid with positioning
-f = 1; % Increase related to motion a.w.t. speed, consider an upper limit. 
+lambda = 2;             % Reduction could aid with positioning
+f = 1;                  % Increase related to motion a.w.t. speed, consider an upper limit. 
 omega = 2 * pi * f;
-k = 2 * pi / lambda; % Wavenumber
-L = 5; % Length of fin
+k = 2 * pi / lambda;    % Wavenumber
+L = 5;                  % Length of fin
 x = linspace(0, L, 50); % Discretize fin along its length
 
-% Time evolution
-t_end = 5; % Time duration of experiment
-dt = 0.05; % Time step
+t_end = 5;              % Time duration of experiment
+dt = 0.05;              % Time step
 t = 0:dt:t_end; % Time vector
 
-% Initialize the plot
 figure;
 h = plot(x,A * sin(k*x)); 
 axis([0 L -A A]);
