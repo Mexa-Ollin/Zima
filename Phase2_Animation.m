@@ -2,7 +2,7 @@
 % Phase 2
 % -o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
 
-%% === Compute Vehicle Displacement (Forward Motion) ===
+% Compute Vehicle Displacement (Forward Motion)
 
 % Parameters
 m = 5;              % Mass of craft in kg
