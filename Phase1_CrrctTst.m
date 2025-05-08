@@ -90,7 +90,7 @@ title('Vortex Wake');
 hold on;
 finLine2 = line([0, 0], [0, 0], 'LineWidth', 3, 'Color', 'b');
 rudderLine2 = line([0, 0], [0, 0], 'LineWidth', 2, 'Color', [0.5 0.5 0.5]);
-
+%{
 for i = 1:N
     rudderDir = [cos(rudderAngle(i)), sin(rudderAngle(i))];
     rudderTip = rudderDir * rudderLength;
@@ -140,6 +140,8 @@ for i = 1:N
     pause(Vl.dt * 0.1);
 end
 
+
+%}
 
 % Parameters
 m = 5;              % Mass of craft in kg
